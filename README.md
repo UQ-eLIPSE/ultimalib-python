@@ -57,7 +57,7 @@ router.on(LTI_LISTEN_LOCATION, "POST", handle_lti_request)
 This module is fairly straightforward, it forwards any LTI request to a secure endpoint which contains a record of the `oauth_consumer_key` and the `secret_key`. This remote endpoint then validates the request, and returns a simple response indicating its validity.
 
 `LTIValidator`
-A class which handles the plumbing of the LTI validation. It is given a ULTIMA service URI, an `app_key`, and a `DataRequester` instance. The user then only needs to call the `validate_request` method with a forwarded LTI payload to determine the validity of it.
+A class which handles the plumbing of the LTI validation. It is given a ULTIMA service URI and an `app_key`. The user then only needs to call the `validate_request` method with a forwarded LTI payload to determine the validity of it.
 
 `LTIValidatorException`
 An exception thrown when the server returns a not-good error code about the LTI response. The exception exposes the following data:
