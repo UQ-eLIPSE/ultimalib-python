@@ -5,6 +5,18 @@ cross-platform LTI validation.
 ## Dependencies
 * [requests](https://github.com/requests/requests)
 
+## Usage
+`pip install https://github.com/UQ-eLIPSE/ultimalib-python/archive/v1.0.0.zip`
+
+To track the package in your `requirements.txt` file; simply paste the github archive URL in it like so:
+
+```bash
+cat requirements.txt
+urllib3==1.22
+https://github.com/UQ-eLIPSE/ultimalib-python/archive/v1.0.0.zip
+beautifulsoup4==4.6.0
+```
+
 ## Tests
 `tox` is used as a test runner for this library. It is configured to run tests for py27, py35 and py36.
 
